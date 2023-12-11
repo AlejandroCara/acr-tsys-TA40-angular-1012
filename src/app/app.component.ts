@@ -20,10 +20,12 @@ export class AppComponent implements OnInit{
     ngAfterViewInit() {
         this.elementRef.nativeElement.ownerDocument
             .body.style.backgroundImage = "url(../assets/wallpapersden.com_rick-and-morty-season-6_3840x2160.jpg)";
-            this.elementRef.nativeElement.ownerDocument
+        this.elementRef.nativeElement.ownerDocument
             .body.style.backgroundSize = "cover";
-            this.elementRef.nativeElement.ownerDocument
+        this.elementRef.nativeElement.ownerDocument
             .body.style.height = "100%";
+        this.elementRef.nativeElement.ownerDocument
+            .html.style.height = "100%";
     }
     
   ngOnInit() { 

@@ -25,10 +25,14 @@ export class RickapiService {
     //Eliminar la clase active de todos los botones del nav
     for(let i = 0; i < navItems.length; i++){
       if((<HTMLInputElement>navItems[i]).getAttribute("routerLink") == route){
-        (<HTMLInputElement>navItems[i]).classList.add("active")
+        (<HTMLInputElement>navItems[i]).classList.add("active");
       } else {
-        (<HTMLInputElement>navItems[i]).classList.remove("active")
+        (<HTMLInputElement>navItems[i]).classList.remove("active");
       }
+    }
+
+    if (route == "/") {
+      (<HTMLInputElement>navItems[0]).classList.add("active");
     }
   }
 

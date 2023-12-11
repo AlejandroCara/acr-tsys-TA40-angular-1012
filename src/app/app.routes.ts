@@ -15,5 +15,9 @@ export const routes: Routes = [
     {
         path: 'about',
         component: AboutComponent
+    },
+    {
+        path: '',
+        component: HomeComponent
     }
 ];
