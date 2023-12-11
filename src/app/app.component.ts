@@ -24,8 +24,6 @@ export class AppComponent implements OnInit{
             .body.style.backgroundSize = "cover";
         this.elementRef.nativeElement.ownerDocument
             .body.style.height = "100%";
-        this.elementRef.nativeElement.ownerDocument
-            .html.style.height = "100%";
     }
     
   ngOnInit() { 
