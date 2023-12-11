@@ -12,10 +12,11 @@ export class RickapiService {
 
   getEightCharacters(){
     // https://rickandmortyapi.com/api/character/1,2,3,4,5,6,7,8
+    let eightUrl = this.apiUrl;
     for(let i = 0; i < 8; i++){
-      this.apiUrl += this.randomMinMax(1, 826) + ",";
+      eightUrl += this.randomMinMax(1, 826) + ",";
     }
-    return this.http.get(this.apiUrl);
+    return this.http.get(eightUrl);
   }
 
   //Poner el nav-item pulsado como activo
